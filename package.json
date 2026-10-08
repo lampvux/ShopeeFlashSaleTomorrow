@@ -1,0 +1,19 @@
+{
+  "name": "shopee-flash-sale-tomorrow",
+  "version": "1.1.1",
+  "description": "Tự động sao chép Flash Sale của Shop sang tất cả khung giờ ngày mai (Playwright + Chrome extension)",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "login": "node runner/login.js",
+    "start": "node runner/run.js",
+    "dry": "node runner/run.js --dry-run",
+    "test": "node test/mock.e2e.test.js"
+  },
+  "dependencies": {
+    "playwright": "^1.56.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

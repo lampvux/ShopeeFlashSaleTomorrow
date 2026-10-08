@@ -1,0 +1,5 @@
+node_modules/
+# Chứa cookie/phiên đăng nhập Shopee — KHÔNG commit, KHÔNG chia sẻ
+profiles/
+logs/
+config/shops.json

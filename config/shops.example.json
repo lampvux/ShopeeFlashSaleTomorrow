@@ -1,0 +1,44 @@
+{
+  "_comment": "Copy file này thành shops.json rồi sửa. Mỗi shop = 1 Chrome profile riêng trong thư mục profiles/<id>.",
+  "defaults": {
+    "qty": 15,
+    "mode": "one",
+    "fallbackQty": 1,
+    "maxRetry": 4,
+    "skipUnfixable": true,
+    "preSubmitDelayMs": 1500,
+    "parallelSlots": 8,
+    "staggerMs": 300,
+    "jitterMs": 300,
+    "maxAttemptsPerSlot": 3,
+    "retryBackoffMs": 2000,
+    "circuitBreaker": 4,
+    "repairEmpty": true,
+    "maxRounds": 2
+  },
+  "browser": {
+    "channel": "chrome",
+    "headless": false,
+    "slowMo": 0
+  },
+  "parallelShops": true,
+  "logRetentionDays": 30,
+  "shops": [
+    {
+      "id": "shop1",
+      "name": "Shop 1",
+      "enabled": true
+    },
+    {
+      "id": "shop2",
+      "name": "Shop 2",
+      "enabled": true
+    },
+    {
+      "id": "shop3",
+      "name": "Shop 3",
+      "enabled": true,
+      "templateFlashSaleId": null
+    }
+  ]
+}
